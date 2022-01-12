@@ -1,14 +1,23 @@
 import "./App.css";
+import Testimonial from "./Components/Testimonial";
+import data from "./data";
 
 function App() {
   return (
     <div className="app">
       <div className="container">
-        <div className="daniel"></div>
-        <div className="walters"></div>
-        <div className="kiera"></div>
-        <div className="jean"></div>
-        <div className="patrick"></div>
+        {data.map((el, index) => {
+          return (
+            <Testimonial
+              classes={el.classes}
+              name={el.name}
+              title={el.title}
+              quote={el.quote}
+              key={index}
+              image={el.image}
+            />
+          );
+        })}
       </div>
     </div>
   );

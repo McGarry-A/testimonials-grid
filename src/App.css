@@ -1,3 +1,7 @@
+.app {
+  height: 100vh;
+}
+
 .container > div {
   border: 1px solid #eee;
 }
@@ -11,6 +15,8 @@
   grid-template-areas: 
   "daniel daniel walters kiera"
   "jean patrick patrick kiera";
+  height: 100%;
+  padding: 6em 4em;
 }
 
 .daniel {
@@ -31,4 +37,8 @@
 
 .patrick {
   grid-area: patrick;
+}
+
+.testimonial {
+  border-radius: 10px;
 }
