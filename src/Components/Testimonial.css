@@ -34,7 +34,9 @@
 
 .testimonial-title {
   line-height: 1.25em;
+  font-size: 1.5rem;
   z-index: 1000;
+  margin-bottom: 10px;
 }
 .testimonial-title-contianer {
   z-index: 111111;

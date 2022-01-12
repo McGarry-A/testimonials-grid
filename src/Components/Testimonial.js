@@ -19,7 +19,7 @@ const Testimonial = ({
       <div className="testimonial-body">
         <div className="testimonial-avatar-container">
           <div className="testimonial-avatar-image">
-            <img src={image} className="avatar-image" alt="avatar" />
+            <img src={image} className="avatar-image" alt="avatar" style={{border: textWhite ? "4px solid #eee" : "none"}} />
           </div>
           <div className="testimonial-avatar-text">
             <h3 className="testimonial-avatar-name">{name}</h3>
