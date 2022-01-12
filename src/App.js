@@ -15,6 +15,9 @@ function App() {
               quote={el.quote}
               key={index}
               image={el.image}
+              bgImage={el.BgImage}
+              textWhite={el.textWhite}
+              color={el.color}
             />
           );
         })}

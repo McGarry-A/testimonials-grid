@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+
 .app {
   height: 100vh;
-}
-
-.container > div {
-  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .container {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 20% 20% 20% 20%;
   grid-template-rows: 400px 400px;
-  column-gap: 20px;
+  column-gap: 40px;
   row-gap: 20px;
   grid-template-areas: 
   "daniel daniel walters kiera"

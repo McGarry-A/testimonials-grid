@@ -1,24 +1,37 @@
 import "./Testimonial.css";
 
-const Testimonial = ({ classes, name, title, quote, image }) => {
+const Testimonial = ({
+  classes,
+  name,
+  title,
+  quote,
+  image,
+  bgImage,
+  color,
+  textWhite,
+}) => {
   return (
-    <div className={classes}>
+    <div
+      className={classes}
+      style={{ color: textWhite ? "white" : "black", backgroundColor: color }}
+    >
+      {bgImage && <img src={bgImage} className="bgImage" alt="bg" />}
       <div className="testimonial-body">
         <div className="testimonial-avatar-container">
           <div className="testimonial-avatar-image">
-            <img src={image} alt="avatar" />
+            <img src={image} className="avatar-image" alt="avatar" />
           </div>
           <div className="testimonial-avatar-text">
-            <h3>{name}</h3>
-            <p>Verified Graduate</p>
+            <h3 className="testimonial-avatar-name">{name}</h3>
+            <p className="testimonial-avatar-verified">Verified Graduate</p>
           </div>
         </div>
       </div>
-      <div>
-        <h2>{title}</h2>
+      <div className="testimonial-title-contianer">
+        <h2 className="testimonial-title">{title}</h2>
       </div>
       <div>
-        <p>{quote}</p>
+        <p className="testimonial-quote">"{quote}"</p>
       </div>
     </div>
   );
